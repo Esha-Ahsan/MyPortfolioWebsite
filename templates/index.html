@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>My Portfolio Website</title>
+        <link rel="stylesheet" href="./static/css/styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/MotionPathPlugin.min.js"></script>
+
+    </head>
+    <body>
+        <div class="navbar-container">
+            <nav class="nav-title">Esha Ahsan</nav>
+                <button class="hamburger-menu" id="hamburger-menu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+                <div class="menu-links" id="menu-links">
+                  <a href="/">Home</a>
+                  <a href="/about">About</a>
+                  <a href="/contact">Contact</a>
+                </div>
+        </div>
+        <canvas id="my_canvas"></canvas>
+
+        <div class="line"></div>
+        <div class="image-container">
+            <img alt="doodle image" src="/static/images/doodlep.jpg" class="image-resize">
+            <img alt="doodle image" src="/static/images/doodlep.jpg" class="imaged-resize">
+            <img alt="doodle image" src="/static/images/doodlep.jpg" class="imaged-resized">
+        </div>
+        <div class="first-container">
+            <div class="hey">Dreaming of a Website<br><span id="low">But Low on Funds?</span></div>
+        </div>
+        <button id="arrow" class="floating" style="position: absolute; top: 860px; left: 47%; transform: translateX(-50%); width: 50px; height: 50px;">
+            <img src="static/images/arrowhead.png" alt="scroll" style="width: 130px; height: 110px;">
+        </button>
+        <div id="second-container">
+            <div class="solution">I have the solution!</div>
+            <div class="sitting-stickie">
+                <img alt="stick man" src="/static/images/Untitled design (4).png" class="stickman-sitting"></div>
+            <div class="ss">I’m passionate about helping small businesses create<br>  beautiful websites that truly reflect their brand. I <br>know that a custom website can be a big investment,<br> so I offer affordable options. All you need <br>to do is provide your material(content,text,etc.) —and I’ll design a unique, custom site that will help you stand out and make a lasting impression.<br> Reach out to learn more and let's bring your vision to life!
+
+            </div>
+        </div>
+        <div class="profile-circle">
+        </div>
+
+        <script src="./static/script.js"></script>
+    </body>
+</html>

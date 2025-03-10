@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <link rel="stylesheet" href="./static/css/styles.css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/MotionPathPlugin.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar-container">
+        <nav class="nav-title">Esha Ahsan</nav>
+        <button class="hamburger-menu" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="menu-links" id="menu-links">
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+        </div>
+    </div>
+    <div class="contact-container">
+        <div class="stickman-container">
+            <img src="/static/images/RunDeck Texture.png" class="stickman-image">
+        </div>
+      <h2>Contact Me</h2>
+      <hr class="line-break">
+      <hr class="line-break">
+      <form action="/contact" method="POST">
+        <label class="form-text" for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label class="form-text" for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label class="form-text" for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button id="submit-button" type="submit">Send</button>
+      </form>
+    </div>
+    <div id="popup-modal" class="popup-modal hidden">
+      <div class="popup-content">
+        <button class="close-btn" id="close-btn">×</button>
+        <h2>Thank You!</h2>
+        <p>Thank you for your message! I'll get back to you soon.</p>
+      </div>
+    </div>
+    <script src="./static/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+*.sqlite3
+
+# Java
+*.class
+*.jar
+*.war
+*.log
+out/
+target/
+
+# Web Development (HTML, CSS)
+node_modules/
+dist/
+build/
+
+# System Files
+.DS_Store
+Thumbs.db
+.idea/  # PyCharm project files
+.vscode/
