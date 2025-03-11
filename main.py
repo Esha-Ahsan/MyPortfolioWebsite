@@ -2,8 +2,10 @@ from flask import Flask, render_template, request, redirect, flash
 import csv
 
 app = Flask(__name__)
+SECRET_KEY='~190bvyry7rnisdd3254erf54'
+import os
+app.secret_key = os.getenv("SECRET_KEY", "default_secret_key")
 
-app.secret_key = '~190bvyry7rnisdd3254erf54'
 
 @app.route('/')
 def home():
