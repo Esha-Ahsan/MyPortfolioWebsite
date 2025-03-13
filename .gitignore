@@ -25,3 +25,5 @@ build/
 Thumbs.db
 .idea/  # PyCharm project files
 .vscode/
+
+.env
